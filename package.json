@@ -1,0 +1,29 @@
+{
+  "name": "markdown-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emilykidd3/markdown-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emilykidd3/markdown-blog/issues"
+  },
+  "homepage": "https://github.com/Emilykidd3/markdown-blog#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
