@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
         createdAt: new Date(),
         description: 'test description'
     }]
-    res.render('index', {articles: articles })
+    res.render('articles/index', {articles: articles })
 })
 
 app.listen(5000);
