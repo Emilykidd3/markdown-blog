@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
         createdAt: new Date(),
         description: 'test description'
     }]
-    res.render('articles/index', {articles: articles })
+    res.render('articles/index', { articles: articles })
 })
 
 app.use('/articles', articleRouter)
