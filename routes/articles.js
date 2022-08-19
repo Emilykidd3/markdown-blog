@@ -23,7 +23,7 @@ router.post("/", async (req, res, next) => {
 }, saveArticleAndRedirect('new'));
 
 router.put('/:id', async (req, res, next) => {
-  req.article = await Article.findById(req.params.id)
+  req.article = await Article.findById(req.params)
     next();
 }, saveArticleAndRedirect('new'))
 

@@ -26,7 +26,7 @@ const articleSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    sanitizedHtml: {
+    sanitizeHtml: {
         type: String,
         required: true
     }
@@ -38,7 +38,7 @@ articleSchema.pre('validate', function(next){
     }
 
     if(this.markdown) {
-        this.sanitizedHtml = dompurify.sanitize(marked(this.markdown))
+        this.sanitizeHtml = dompurify.sanitize(marked(this.markdown))
     }
 
     next()
